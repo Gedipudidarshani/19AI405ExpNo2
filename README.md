@@ -55,31 +55,7 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 </ol></B>
 <hr>
 <h3>PRROGRAM</h3>
-
-'''Depth First Search uses STACK AND RECURSION
-'''
-#import defaultdict
-from collections import defaultdict
-def dfs(graph,start,visited,path):
-    path.append(start)
-    visited[start]=True
-    for neighbour in graph[start]:
-        if visited[neighbour]==False:
-            dfs(graph,neighbour,visited,path)
-            visited[neighbour]=True
-    return path
-graph=defaultdict(list)
-n,e=map(int,input().split())
-for i in range(e):
-    u,v=map(str,input().split())
-    graph[u].append(v)
-    graph[v].append(u)
-#print(graph)
-start='A'
-visited=defaultdict(bool)
-path=[]
-traversedpath=dfs(graph,start,visited,path)
-print(traversedpath)
+![image](https://github.com/Gedipudidarshani/19AI405ExpNo2/assets/139340574/96c12703-2877-495a-ac4f-013d3f387b85)
 
 <hr>
 <h3>Sample Input</h3>
