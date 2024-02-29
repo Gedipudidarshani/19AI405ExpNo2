@@ -55,7 +55,7 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 </ol></B>
 <hr>
 <h3>PRROGRAM</h3>
-~~~
+""""""'
 '''Depth First Search uses STACK AND RECURSION
 '''
 #import defaultdict
@@ -80,7 +80,7 @@ visited=defaultdict(bool)
 path=[]
 traversedpath=dfs(graph,start,visited,path)
 print(traversedpath)
-~~~
+""""
 <hr>
 <h3>Sample Input</h3>
 <hr>
