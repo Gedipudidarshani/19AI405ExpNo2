@@ -55,7 +55,7 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 </ol></B>
 <hr>
 <h3>PRROGRAM</h3>
-![image](https://github.com/Gedipudidarshani/19AI405ExpNo2/assets/139340574/96c12703-2877-495a-ac4f-013d3f387b85)
+![Screenshot 2024-02-29 213803](https://github.com/Gedipudidarshani/19AI405ExpNo2/assets/139340574/1ab674d4-9f29-49d0-83d4-c552a93e5d84)
 
 <hr>
 <h3>Sample Input</h3>
