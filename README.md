@@ -87,20 +87,20 @@ transversedpath=dfs(graph,start,visited,path)<BR>
 
 <h3>Sample Input</h3>
 <hr>
-8 9 <BR>
-A B <BR>
-A C <BR>
-B E <BR>
-C D <BR>
-B D <BR>
-C G <BR>
-D F <BR>
-G F <BR>
-F H <BR>
+7 8<br>
+A B<br>
+B C<br>
+A C<br>
+C D<br>
+A D<br>
+D E<br>
+E F<br>
+F G<br>
+D G<br>
 <hr>
 <h3>Sample Output</h3>
 <hr>
-['A', 'B', 'E', 'D', 'C', 'G', 'F', 'H']
+['D G']
 
 <hr>
 
