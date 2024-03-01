@@ -56,32 +56,33 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 <hr>
 <h3>PRROGRAM</h3>
 <hr>
-#exp2 DFS-Depth First Search Transversal
-#It uses Stack and recursion
-#1.Construct a graph
-#2.Get the transversed path from the graph
-from collections import defaultdict
-def dfs(graph,start,visited,path):
-  path.append(start)
-  visited[start]=True
-  for neighbour in graph[start]:
-    if visited[neighbour]==False:
-      dfs(graph,neighbour,visited,path)
-      visited[neighbour]=true
-  return path
-graph=defaultdict(list)
-n,e=map(int,input().split())
-#n=>Number of vertices,e=>number of edges
-for i in range(e):
-  u,v=map(str,input().split())
-  graph[u].append(v)
-  graph[v].append(u)
-#print(graph)
-start=input()
-visited=defaultdict(bool)
-path=[]
-transversedpath=dfs(graph,start,visited,path)
-print(transversedpath)
+#exp2 DFS-Depth First Search Transversal<BR>
+#It uses Stack and recursion<BR>
+#1.Construct a graph<BR>
+#2.Get the transversed path from the graph<BR>
+from collections import defaultdict<BR>
+def dfs(graph,start,visited,path):<BR>
+  <BR>path.append(start)<BR>
+  <BR>visited[start]=True<BR>
+  <BR>for neighbour in graph[start]:<BR>
+    <BR>if visited[neighbour]==False:<BR>
+      <BR>dfs(graph,neighbour,visited,path)<BR>
+      <BR>visited[neighbour]=true<BR>
+  <BR>return path<BR>
+graph=defaultdict(list)<BR>
+n,e=map(int,input().split())<BR>
+#n=>Number of vertices,e=>number of edges<BR>
+for i in range(e):<BR>
+  <BR>u,v=map(str,input().split())<BR>
+  <BR>graph[u].append(v)<BR>
+  <BR>graph[v].append(u)<BR>
+<BR>#print(graph)<BR>
+<BR>start=input()<BR>
+<BR>visited=defaultdict(bool)<BR>
+<BR>path=[]<BR>
+<BR>transversedpath=dfs(graph,start,visited,path)<BR>
+
+<BR>print(transversedpath)<BR>
 
 
 <h3>Sample Input</h3>
