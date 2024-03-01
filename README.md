@@ -56,7 +56,32 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 <hr>
 <h3>PRROGRAM</h3>
 <hr>
-![image](https://github.com/Gedipudidarshani/19AI405ExpNo2/assets/139340574/301c3290-b73e-4c5a-8e22-3eaeb39ded3a)
+#exp2 DFS-Depth First Search Transversal
+#It uses Stack and recursion
+#1.Construct a graph
+#2.Get the transversed path from the graph
+from collections import defaultdict
+def dfs(graph,start,visited,path):
+  path.append(start)
+  visited[start]=True
+  for neighbour in graph[start]:
+    if visited[neighbour]==False:
+      dfs(graph,neighbour,visited,path)
+      visited[neighbour]=true
+  return path
+graph=defaultdict(list)
+n,e=map(int,input().split())
+#n=>Number of vertices,e=>number of edges
+for i in range(e):
+  u,v=map(str,input().split())
+  graph[u].append(v)
+  graph[v].append(u)
+#print(graph)
+start=input()
+visited=defaultdict(bool)
+path=[]
+transversedpath=dfs(graph,start,visited,path)
+print(transversedpath)
 
 
 <h3>Sample Input</h3>
