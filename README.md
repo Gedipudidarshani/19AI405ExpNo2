@@ -62,25 +62,25 @@ Now, the Stack becomes empty, which means we have visited all the nodes, and our
 #2.Get the transversed path from the graph<BR>
 from collections import defaultdict<BR>
 def dfs(graph,start,visited,path):<BR>
-  <BR>path.append(start)<BR>
-  <BR>visited[start]=True<BR>
-  <BR>for neighbour in graph[start]:<BR>
-    <BR>if visited[neighbour]==False:<BR>
-      <BR>dfs(graph,neighbour,visited,path)<BR>
-      <BR>visited[neighbour]=true<BR>
-  <BR>return path<BR>
+  path.append(start)<BR>
+  visited[start]=True<BR>
+  for neighbour in graph[start]:<BR>
+    if visited[neighbour]==False:<BR>
+      dfs(graph,neighbour,visited,path)<BR>
+      visited[neighbour]=true<BR>
+  return path<BR>
 graph=defaultdict(list)<BR>
 n,e=map(int,input().split())<BR>
 #n=>Number of vertices,e=>number of edges<BR>
 for i in range(e):<BR>
-  <BR>u,v=map(str,input().split())<BR>
-  <BR>graph[u].append(v)<BR>
-  <BR>graph[v].append(u)<BR>
-<BR>#print(graph)<BR>
-<BR>start=input()<BR>
-<BR>visited=defaultdict(bool)<BR>
-<BR>path=[]<BR>
-<BR>transversedpath=dfs(graph,start,visited,path)<BR>
+  u,v=map(str,input().split())<BR>
+  graph[u].append(v)<BR>
+  graph[v].append(u)<BR>
+#print(graph)<BR>
+start=input()<BR>
+visited=defaultdict(bool)<BR>
+path=[]<BR>
+transversedpath=dfs(graph,start,visited,path)<BR>
 
 <BR>print(transversedpath)<BR>
 
